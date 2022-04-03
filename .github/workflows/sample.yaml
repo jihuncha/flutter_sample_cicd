@@ -2,19 +2,19 @@
 on: push
 name: make Debug apk
 jobs:
-  tag:
-    name: Tag
-    runs-on: ubuntu-latest
-    steps:
-      - name: Get current date
-        id: date
-        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
-
-      - name: Commit tagger
-        uses: tvdias/github-tagger@v0.0.2
-        with:
-          repo-token: ${{ secrets.TOKEN_GITHUB }}
-          tag: ${{ steps.date.outputs.date }}
+#  tag:
+#    name: Tag
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Get current date
+#        id: date
+#        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
+#
+#      - name: Commit tagger
+#        uses: tvdias/github-tagger@v0.0.2
+#        with:
+#          repo-token: ${{ secrets.TOKEN_GITHUB }}
+#          tag: ${{ steps.date.outputs.date }}
 
   build:
     name: Build APK
