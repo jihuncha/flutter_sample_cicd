@@ -7,6 +7,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
+        # 태그없이 사용하고 싶다면
+        with:
+          fetch-depth: 0
       # 자바 버전 설정
       - uses: actions/setup-java@v1
         with:
