@@ -10,6 +10,9 @@ buildscript {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
 
         classpath 'com.google.gms:google-services:4.3.10'
+
+        // Add the App Distribution Gradle plugin
+        classpath 'com.google.firebase:firebase-appdistribution-gradle:2.0.1'
     }
 }
 
