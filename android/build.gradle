@@ -12,9 +12,11 @@ buildscript {
         classpath 'com.google.gms:google-services:4.3.10'
 
         // Add the App Distribution Gradle plugin
-        classpath 'com.google.firebase:firebase-appdistribution-gradle:2.0.1'
+        classpath 'com.google.firebase:firebase-appdistribution-gradle:3.0.1'
     }
 }
+
+
 
 allprojects {
     repositories {
